@@ -1145,19 +1145,14 @@ Responsive
 		height: 600px;
 	}
 	.copyright {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		padding: 60px 15px 50px;
-		text-align: center;
-		width: 100%;
+		display: none;
 	}
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
 		max-width: calc(100% - 50px);
 	}
 	.blog-content:last-child{
-		margin-bottom: 200px;
+		margin-bottom: 100px;
 	}
 }
 
@@ -1240,12 +1235,7 @@ Responsive
 		height: 600px;
 	}
 	.copyright {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		padding: 60px 15px 50px;
-		text-align: center;
-		width: 100%;
+		display: none;
 	}
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
@@ -1257,7 +1247,7 @@ Responsive
 		display: block;
 	}
 	.blog-content:last-child{
-		margin-bottom: 200px;
+		margin-bottom: 50px;
 	}
 	.hero-track .owl-nav {
 		padding-top: 30px;
@@ -1282,7 +1272,7 @@ Responsive
 		margin-bottom: 200px;
 	}
 	.blog-content:last-child{
-		margin-bottom: 200px;
+		margin-bottom: 50px;
 	}
 	.blog-metas .blog-meta {
 	display: block;	
