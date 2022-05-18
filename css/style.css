@@ -9,31 +9,19 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+
 @font-face {
-    font-family: 'MapoGoldenPier';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'JSDongkang-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'GoyangDeogyang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangDeogyang.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 
 ul{list-style-type:none;}
 html,
 body {
 	height: 100%;
-	font-family: 'Gowun Batang';
+	font-family: 'GowunBatang-Regular';
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	background-color: rgb(255, 251, 239);
@@ -406,7 +394,7 @@ Commom elements
 	padding-bottom: 18px;
 	overflow: hidden;
 	font-size: 72px;
-	font-family: "Playfair Display", serif;
+	font-family: 'GowunBatang-Regular';
 	line-height: 1;
 	font-weight: 900;
 	position: relative;
@@ -632,13 +620,10 @@ body.push-side #ascrail2000-hr {
 }
 
 .about-info {
-	margin-bottom: 80px;
-	width: 374px;
-	height: 1500px;
 	background-color: #fff;
-	padding: 80px 20px 0;
+	padding: 60px 20px 50px;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-	border-radius: 50px
+	border-radius: 50px;
 }
 
 .about-info .greeting{
@@ -660,7 +645,7 @@ body.push-side #ascrail2000-hr {
 	font-weight:bold;
 }
 
-.about-info .d_icon{margin:-15px 0 0;}
+.about-info .d_icon{margin:20px 0 0; text-align: center;}
 
 .about-info ul li{
 	display:inline-block;
@@ -669,7 +654,7 @@ body.push-side #ascrail2000-hr {
 .copyright {
 	color: rgba(130, 130, 130, 0.29);
 	position: fixed;
-	height: 80px;
+	height:70px;
 	width: 614px;
 	left: 0;
 	bottom: 0;
@@ -677,8 +662,10 @@ body.push-side #ascrail2000-hr {
 	padding-left: 145px;
 	padding-top: 20px;
 }
-.copyright p{font-size: 10px;
-	margin:0;}
+.copyright p{
+	font-size: 14px;
+	margin:0;
+}
 
 .copyright a {
 	color: rgba(130, 130, 130, 0.29);
@@ -787,7 +774,7 @@ About Page
 }
 
 .milestone h2 {
-	font-family: "Playfair Display", serif;
+	font-family: 'GowunBatang-Regular';
 	font-weight: 900;
 	font-size: 72px;
 	float: left;
@@ -821,7 +808,7 @@ Blog page
 }
 
 .blog-post-item {
-	font-family: 'Gowun Batang';
+	font-family: 'GowunBatang-Regular';
 }
 
 .blog-post-item:last-child {
@@ -865,7 +852,7 @@ Blog page
 }
 
 .blog-content p{
-	font-family: 'Gowun Batang';
+	font-family: 'GowunBatang-Regular';
 	font-size:16px;
 	padding-right:30px;
 	box-sizing:border-box;
@@ -1057,7 +1044,7 @@ Responsive
 		padding-left: 450px;
 	}
 	.main-sidebar .mb-warp {
-		padding: 120px 50px 91px;
+		padding: 110px 40px 91px 50px;
 	}
 	.portfolio-item .pi-info {
 		padding: 15px 0 10px 0;
@@ -1149,7 +1136,7 @@ Responsive
 		margin: 0;
 	}
 	.blog-post-item:last-child {
-		margin-bottom: 50px;
+		margin-bottom: 0;
 	}
 	.contact-text-warp {
 		padding-left: 0;
@@ -1158,7 +1145,7 @@ Responsive
 		height: 600px;
 	}
 	.copyright {
-		position: relative;
+		position: fixed;
 		left: 0;
 		bottom: 0;
 		padding: 60px 15px 50px;
@@ -1168,6 +1155,9 @@ Responsive
 	.nicescroll-rails.nicescroll-rails-hr,
 	#ascrail2000-hr {
 		max-width: calc(100% - 50px);
+	}
+	.blog-content:last-child{
+		margin-bottom: 200px;
 	}
 }
 
@@ -1241,7 +1231,7 @@ Responsive
 		margin: 0;
 	}
 	.blog-post-item:last-child {
-		margin-bottom: 50px;
+		margin-bottom: 0;
 	}
 	.contact-text-warp {
 		padding-left: 0;
@@ -1250,7 +1240,7 @@ Responsive
 		height: 600px;
 	}
 	.copyright {
-		position: relative;
+		position: fixed;
 		left: 0;
 		bottom: 0;
 		padding: 60px 15px 50px;
@@ -1264,6 +1254,10 @@ Responsive
 	.blog-content {
 		width: calc(100% - 30px);
 		margin-left: 15px;
+		display: block;
+	}
+	.blog-content:last-child{
+		margin-bottom: 200px;
 	}
 	.hero-track .owl-nav {
 		padding-top: 30px;
@@ -1285,6 +1279,10 @@ Responsive
 @media only screen and (max-width: 665px) {
 	.blog-content {
 		text-align:center;
+		margin-bottom: 200px;
+	}
+	.blog-content:last-child{
+		margin-bottom: 200px;
 	}
 	.blog-metas .blog-meta {
 	display: block;	
@@ -1320,6 +1318,9 @@ Responsive
 		margin-left: 5px;
 		padding: 40px 15px;
 		text-align:center;
+	}
+	.blog-content:last-child{
+		margin-bottom: 200px;
 	}
 	.blog-metas .blog-meta {
 	display: block;	
